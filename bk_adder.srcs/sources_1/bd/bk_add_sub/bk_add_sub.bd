@@ -1,0 +1,362 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE251CDEDBBE72B11",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../bk_adder.gen/sources_1/bd/bk_add_sub",
+      "name": "bk_add_sub",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "brent_kung_0": "",
+      "system_ila_0": "",
+      "vio_0": "",
+      "blk_mem_gen_0": "",
+      "clk_wiz": "",
+      "controller_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bk_add_sub_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      },
+      "reset_rtl": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "brent_kung_0": {
+        "vlnv": "xilinx.com:module_ref:brent_kung:1.0",
+        "xci_name": "bk_add_sub_brent_kung_0_0",
+        "xci_path": "ip\\bk_add_sub_brent_kung_0_0\\bk_add_sub_brent_kung_0_0.xci",
+        "inst_hier_path": "brent_kung_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "brent_kung",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "b": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "cin": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "bk_add_sub_system_ila_0_0",
+        "xci_path": "ip\\bk_add_sub_system_ila_0_0\\bk_add_sub_system_ila_0_0.xci",
+        "inst_hier_path": "system_ila_0",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "5"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE_WIDTH_PROPAGATION": {
+            "value": "MANUAL"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "bk_add_sub_vio_0_0",
+        "xci_path": "ip\\bk_add_sub_vio_0_0\\bk_add_sub_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "2"
+          },
+          "C_PROBE_OUT0_INIT_VAL": {
+            "value": "0x1"
+          }
+        }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "bk_add_sub_blk_mem_gen_0_0",
+        "xci_path": "ip\\bk_add_sub_blk_mem_gen_0_0\\bk_add_sub_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../../../test_vector.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "WRITE_FIRST"
+          },
+          "Read_Width_A": {
+            "value": "64"
+          },
+          "Register_PortA_Output_of_Memory_Core": {
+            "value": "true"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "false"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "16"
+          },
+          "Write_Width_A": {
+            "value": "64"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "bk_add_sub_clk_wiz_0",
+        "xci_path": "ip\\bk_add_sub_clk_wiz_0\\bk_add_sub_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "controller_0": {
+        "vlnv": "xilinx.com:module_ref:controller:1.0",
+        "xci_name": "bk_add_sub_controller_0_0",
+        "xci_path": "ip\\bk_add_sub_controller_0_0\\bk_add_sub_controller_0_0.xci",
+        "inst_hier_path": "controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "addra": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "clka": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "douta": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "ena": {
+            "direction": "O"
+          },
+          "start_stop": {
+            "direction": "I"
+          },
+          "add_sub": {
+            "direction": "I"
+          },
+          "a": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "b": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "cin": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "controller_0_addra": {
+        "ports": [
+          "controller_0/addra",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "controller_0_ena": {
+        "ports": [
+          "controller_0/ena",
+          "blk_mem_gen_0/ena"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "controller_0/douta"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "controller_0/start_stop"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "controller_0/add_sub"
+        ]
+      },
+      "controller_0_a": {
+        "ports": [
+          "controller_0/a",
+          "brent_kung_0/a",
+          "system_ila_0/probe0"
+        ]
+      },
+      "controller_0_b": {
+        "ports": [
+          "controller_0/b",
+          "brent_kung_0/b",
+          "system_ila_0/probe1"
+        ]
+      },
+      "controller_0_cin": {
+        "ports": [
+          "controller_0/cin",
+          "brent_kung_0/cin",
+          "system_ila_0/probe3"
+        ]
+      },
+      "brent_kung_0_sum": {
+        "ports": [
+          "brent_kung_0/sum",
+          "vio_0/probe_in0",
+          "system_ila_0/probe2"
+        ]
+      },
+      "brent_kung_0_cout": {
+        "ports": [
+          "brent_kung_0/cout",
+          "vio_0/probe_in1",
+          "system_ila_0/probe4"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "system_ila_0/clk",
+          "vio_0/clk",
+          "blk_mem_gen_0/clka",
+          "controller_0/clka"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "reset_rtl_1": {
+        "ports": [
+          "reset_rtl",
+          "clk_wiz/reset",
+          "controller_0/reset"
+        ]
+      }
+    }
+  }
+}

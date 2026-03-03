@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.904014",
+   "Default View_TopLeft":"-116,23",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -10 -y 290 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace inst brent_kung_0 -pg 1 -lvl 1 -x 150 -y 80 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 1000 -y 170 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 2 -x 430 -y 350 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 1000 -y 410 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 150 -y 280 -defaultsOSRD
+preplace inst controller_0 -pg 1 -lvl 3 -x 710 -y 330 -defaultsOSRD
+preplace netloc controller_0_addra 1 3 1 870 290n
+preplace netloc controller_0_ena 1 3 1 850 310n
+preplace netloc blk_mem_gen_0_douta 1 2 2 580 440 890J
+preplace netloc vio_0_probe_out0 1 2 1 560 340n
+preplace netloc vio_0_probe_out1 1 2 1 560 360n
+preplace netloc controller_0_a 1 0 4 10 170 NJ 170 NJ 170 860
+preplace netloc controller_0_b 1 0 4 30 160 NJ 160 NJ 160 840
+preplace netloc controller_0_cin 1 0 4 20 190 NJ 190 NJ 190 830
+preplace netloc brent_kung_0_sum 1 1 3 290 180 NJ 180 NJ
+preplace netloc brent_kung_0_cout 1 1 3 270 220 NJ 220 NJ
+preplace netloc Net 1 1 3 260 430 570 430 880
+preplace netloc sys_clock_1 1 0 1 NJ 290
+preplace netloc reset_rtl_1 1 0 3 20J 350 280 270 580
+levelinfo -pg 1 -10 150 430 710 1000 1110
+pagesize -pg 1 -db -bbox -sgen -120 0 1110 530
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"1"
+}
