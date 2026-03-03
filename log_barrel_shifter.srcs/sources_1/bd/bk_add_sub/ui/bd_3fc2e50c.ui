@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.638889",
+   "Default View_TopLeft":"-321,9",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -10 -y 370 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -10 -y 290 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 1030 -y 170 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 2 -x 460 -y 370 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 1030 -y 430 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 180 -y 360 -defaultsOSRD
+preplace inst log_barrel_shift_0 -pg 1 -lvl 1 -x 180 -y 100 -defaultsOSRD
+preplace inst controller_1 -pg 1 -lvl 3 -x 740 -y 340 -defaultsOSRD
+preplace netloc blk_mem_gen_0_douta 1 2 2 610 460 930J
+preplace netloc vio_0_probe_out0 1 2 1 N 360
+preplace netloc Net 1 1 3 330 300 600 450 910
+preplace netloc sys_clock_1 1 0 1 NJ 370
+preplace netloc reset_rtl_1 1 0 3 20 290 NJ 290 590J
+preplace netloc controller_1_a 1 0 4 10 210 NJ 210 NJ 210 890
+preplace netloc controller_1_dir 1 0 4 30 220 NJ 220 NJ 220 880
+preplace netloc log_barrel_shift_0_data_out 1 1 3 320 230 NJ 230 900J
+preplace netloc controller_1_shift_amt 1 0 4 20 200 NJ 200 NJ 200 870
+preplace netloc controller_1_rotate 1 0 4 40 190 NJ 190 NJ 190 920
+preplace netloc controller_1_ena 1 3 1 900 310n
+preplace netloc controller_1_addra 1 3 1 930 290n
+preplace netloc vio_0_probe_out1 1 2 1 N 380
+levelinfo -pg 1 -10 180 460 740 1030 1140
+pagesize -pg 1 -db -bbox -sgen -120 0 1140 550
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"1"
+}
